@@ -28,7 +28,7 @@ Net::SSH.start(server, user_name, :port => port ) do |ssh|
   Dir.foreach('.') do |file|
     if !blacklist.include?(file)
       puts "Uploading #{file} to #{project_name}"
-      ssh.scp.upload! file, "#{file_path}/#{file}"
+      ssh.scp.upload! file, "#{file_path}/#{file}", :recursive => true
     else
       puts "The file    #{file}     is on the #{project_name} BLACKLIST"
     end
