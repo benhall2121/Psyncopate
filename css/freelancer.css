@@ -1,5 +1,7 @@
 body {
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
 }
 
 p {
@@ -28,45 +30,6 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-}
-
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
 }
 
 .img-centered {
@@ -186,6 +149,10 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+}
+
+section.footer {
+    padding: 25px 0 50px 0;
 }
 
 section h2 {
@@ -463,3 +430,70 @@ footer .footer-below {
     background-color: none !important;
 
 }
+
+
+
+
+
+
+section.philosophy{
+ background-image:url('../img/woodBackground.png');   
+}
+
+.p_row{
+  margin-top: 15px;
+}
+
+.header_section_text{
+    margin:40px 0;
+    font-size: 27px;
+    font-family: 'museo_slab500', serif;
+}
+
+.text_div_wrapper{
+    padding-left: 30px;
+}
+
+.header_p_text{
+    font-size: 24px;
+    margin:5px 0;
+    font-family: 'museo_slab500', serif;
+}
+
+.p_text{
+    font-size: 17px;
+}
+
+
+
+.footer{
+    background-color: #414141;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer_copyright{
+    margin-top: 40px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.underline_div{
+    border-bottom: 2px solid #565656;
+    padding: 7px 0;
+}
+
+.footer_line_spacing{
+    padding: 5px 0 0 0;
+}
+
+.social_wrapper a{
+    margin:0 5px;
+}
+
+
+
