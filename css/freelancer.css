@@ -27,8 +27,6 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -54,8 +52,6 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -81,11 +77,11 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        margin-top: 21px;
+        margin-top: 40px;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -96,7 +92,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 0 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -105,15 +101,28 @@ header .intro-text .skills {
 
     .navbar-first{
         position: fixed;
-        background-color: white;
+        background-color: #ECEFF1;
         width: 100%;
+        color:#0591BD;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        padding:10px;
+    }
+
+    .navbar-first a{
+        color:#0591BD;
+        text-decoration: none;
+    }
+
+    .navbar-first a:hover{
+        text-decoration: none;
     }
 
     .fixed-position{
         margin-top: 0px;
-        -webkit-transition: all .1s;
-        -moz-transition: all .1s;
-        transition: all .1s;
+        -webkit-transition: all .7s;
+        -moz-transition: all .7s;
+        transition: all .7s;
     }
 
     .disappear{
@@ -125,8 +134,6 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -148,7 +155,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section.footer {
@@ -425,19 +432,61 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus{
-    border-top:1px solid red;
-    background-color: none !important;
 
+
+
+
+
+section.main_section{
+  background-image:url('../img/mainImageCropped.png');  
+  background-repeat:no-repeat;
+  background-position:right bottom; 
+  background-color: #405F70;
+  min-height: 708px;
+}
+
+.main_section_wrapper{
+    margin-top: 150px;
 }
 
 
+.main_section_large_text{
+    font-size: 40px;
+    font-family: 'museo_slab500', serif;
+    color: #fff;
+    line-height: 50px;
+}
 
+.main_section_medium_text{
+    font-size: 19px;
+    color: white;
+    text-shadow: 0px 1px #000;
+    line-height: 27px;
+}
 
+section.banner{
+  background-color: #EDF0F2;
+  padding: 25px;
+}
 
+section.about{
+ background-color: #FFF;  
+}
+
+section.services{
+ background-color: #EDF0F2;  
+}
 
 section.philosophy{
  background-image:url('../img/woodBackground.png');   
+}
+
+.banner_row{
+    margin-bottom: 15px;
+}
+
+.giant_gap{
+    margin:30px 0;
 }
 
 .p_row{
@@ -495,5 +544,8 @@ section.philosophy{
     margin:0 5px;
 }
 
+li.gray_divider{
+    padding:15px 8px 0 8px;
+}
 
 

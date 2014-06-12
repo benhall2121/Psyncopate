@@ -14,7 +14,7 @@ var cbpAnimatedHeader = (function() {
 		first_header = document.querySelector( '.navbar-first' ),
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
-		changeHeaderOn = 300;
+		changeHeaderOn = 40;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -29,19 +29,15 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
+			classie.add( header, 'fixed-position' );
+			classie.add( first_header, 'disappear');
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
-		}
-
-
-		if (sy >= 21 ){
-			classie.add( header, 'fixed-position' );
-			classie.add( first_header, 'disappear');
-		} else {
 			classie.remove( header, 'fixed-position' );
 			classie.remove( first_header, 'disappear');
 		}
+
 
 		didScroll = false;
 	}

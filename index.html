@@ -11,14 +11,14 @@
     <title>Psyncopate</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='css/museo_slab.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,7 +33,7 @@
     <nav class="navbar-first">
       <div class="container">
         <div class="pull-right">
-          <a href="#">Sign UP</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="border:1px solid blue;">Log in</a>
+          <a href="#">Sign Up</a>&nbsp;&nbsp;<img src="img/dots.png" />&nbsp;&nbsp;<a href="#" style="border:1px solid #0591BD; padding:3px 5px;">Log in</a>
         </div>
       </div>
     </nav>
@@ -42,13 +42,13 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <a class="navbar-brand" href="#page-top">Psyncopate</a>
+            <div class="navbar-header page-scroll col-lg-3" style="margin-top:5px;">
+                  <img src="img/logo.png" />
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="navbar-header page-scroll col-lg-6" id="bs-example-navbar-collapse-1" style="text-align: center;">
+                <ul class="nav navbar-nav">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -61,127 +61,228 @@
                     <li class="page-scroll">
                         <a href="#philosophy">Philosophy</a>
                     </li>
+                    <li class="page-scroll">
+                        <a href="#bio">Bios</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+
+            <div class="navbar-header page-scroll col-lg-3">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a href="#"><img src="img/emailIcon.png" /></a>
+                    </li>
+                    <li class="gray_divider">
+                       <img src="img/graydivider.png" />
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#"><img src="img/chatIcon.png" /></a>
+                    </li>
+                    <li class="gray_divider">
+                       <img src="img/graydivider.png" />
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#"><img src="img/phoneIcon.png" /></a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="container">
+    <section class="main_section" id="main_section">
+        <div class="container main_section_wrapper">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                <div class="col-lg-4">
+                    <div class="main_section_large_text">
+                        Get big beautiful data in 30 days
+                    </div>
+                    <div class="main_section_medium_text" style="margin:35px 0;">
+                        Need better data insight in the next 30 days? Start today with your <span style="color:#68D7FF;"><strong>Free 30 Day Trial</strong></span> and get to the point
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/psyncopateButton.png" /></a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="#" src=""><img src="img/tibcoLogo.png" /></a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" src=""><img src="img/spotfireLogo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
 
-    <section class="success" id="about">
+    <section id="about" class="about">
         <div class="container">
-            <div class="row">
+            <div class="row banner_row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <img src="img/aboutUsBanner.png" />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
+
+            <div class="row giant_gap">
+                &nbsp;
+            </div>
+
+            <div class="row p_row text-center">
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <div>
+                      <img src="img/graphCircle.png">
+                    </div>
+                    <div class="header_p_text">
+                        We make things easy
+                    </div>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+
+                <div class="col-lg-4">
+                    <div>
+                      <img src="img/targetCircle.png">
+                    </div>
+                    <div class="header_p_text">
+                        We get to the point
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                      <img src="img/phoneCircle.png">
+                    </div>
+                    <div class="header_p_text">
+                        Clients call us back
+                    </div>
                 </div>
             </div>
+
+           
+            <div class="row p_row">
+                <div style="border-bottom:1px solid #CDCDCD; display:inline:block; width:464px; margin:20px auto;">
+                    &nbsp;
+                </div>
+            </div>
+
+
+            <div class="row p_row">
+                <div class="col-lg-6 p_text">
+                    <p>
+                    <span class="header_p_text">Psyncopate</span> is the premier cloud and big data strategy and services provider on the West Coast. We are a preferred distributor and implementor of TIBCO software products.
+                    </p>
+                    <p style="margin-top:25px;">
+                    We work with business users and IT to leverage the hidden power that is stored in their data.
+                    </p>
+                    <p style="margin-top:25px;">
+                    <span class="header_p_text">Clients call us back.</span>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="img/imageCluster.png" />
+                </div>
+            </div>
+
+
         </div>
     </section>
 
-    <section id="services">
+    
+
+    <section id="services" class="services">
         <div class="container">
-            <div class="row">
+            <div class="row banner_row">
                 <div class="col-lg-12 text-center">
-                    <h2>Services</h2>
+                    <img src="img/ourServicesBanner.png" />
                 </div>
             </div>
+
+            <div class="row giant_gap">
+                &nbsp;
+            </div>
+
+            <div class="row p_row">
+                <div class="col-lg-4">
+                  <div>
+                    <img src="img/implementationIcon.png" />
+                  </div>
+                  <div>
+                    <div class="header_p_text">
+                        Together is our Strategy
+                    </div>
+                    <div class="p_text">
+                        <p>
+                        Together, we define opportunities and dig deep to find the critical pain points. Together, we prioritize your critical business needs and start building paths and knocking down obstacles to goal achievement. Together, we transform your business and operations by leveraging business intelligence tools to gain a sustained competitive advantage. 
+                        </p>
+                        <p>
+                        Then it’s up to you. You now have the tools and talent to increase revenue, cut costs, improve operations, or grow market share.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <img src="img/wrenchhandIcon.png" />
+                  </div>
+                  <div>
+                    <div class="header_p_text">
+                        Implementation
+                    </div>
+                    <div class="p_text">
+                        <p>
+                        You have a technology roadmap or strategic plan, but you do not have the resources or knowledge to make the plan reality.  
+                        </p>
+                        <p>
+                        Together, we define our success metrics upfront to ensure stakeholder buy-in and mutual celebration at milestone completions. Our strong commitment to communication means no surprises, and allows for quick resolution to challenges as they arise throughout the implementation process.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <img src="img/stopwatchIcon.png" />
+                  </div>
+                  <div>
+                    <div class="header_p_text">
+                        Training
+                    </div>
+                    <div class="p_text">
+                        <p>
+                        We at psyncopate are well aware of your time constraints. That’s why we developed training programs that are effective, efficient, and encourage you to be fastest to action. 
+                        </p>
+                        <p>
+                        We speak both business and IT.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal1" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal2" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal3" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal4" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal5" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <a href="#servicesModal6" class="services-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="" />
-                    </a>
+                <div style="border-bottom:1px solid #CDCDCD; display:inline:block; width:200px; margin:20px auto;">
+                    &nbsp;
                 </div>
             </div>
+
+
         </div>
     </section>
+
+
 
     <section id="philosophy" class="philosophy">
         <div class="container">
-            <div class="row">
+            <div class="row banner_row">
                 <div class="col-lg-12 text-center">
                     <img src="img/philosophyBanner.png" />
                 </div>
@@ -279,6 +380,20 @@
                   </div>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="bio" class="bio">
+        <div class="container">
+            <div class="row banner_row">
+                <div class="col-lg-12 text-center">
+                    BIOS
+                </div>
+            </div>
+
 
         </div>
     </section>
