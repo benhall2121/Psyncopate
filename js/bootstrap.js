@@ -1567,7 +1567,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
   }
 
   ScrollSpy.DEFAULTS = {
-    offset: 10
+    offset: 50
   }
 
   ScrollSpy.prototype.refresh = function () {

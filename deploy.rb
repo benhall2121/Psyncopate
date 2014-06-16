@@ -3,7 +3,7 @@ require "rubygems"
 require 'net/ssh'
 require "net/scp"
 
-blacklist = [".", "..", ".DS_Store", ".git"]
+blacklist = [".", "..", ".DS_Store", ".git", "deploy.rb"]
 project_name = "psyncopate"
 user_name = "demo"
 server = "50.57.64.194"
@@ -29,6 +29,7 @@ Net::SSH.start(server, user_name, :port => port ) do |ssh|
     if !blacklist.include?(file)
       puts "Uploading #{file} to #{project_name}"
       ssh.scp.upload! file, "#{file_path}/#{file}", :recursive => true
+      ssh.exec "chmod -R 777 #{file_path}/#{file}"
     else
       puts "The file    #{file}     is on the #{project_name} BLACKLIST"
     end
