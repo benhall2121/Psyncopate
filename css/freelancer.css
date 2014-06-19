@@ -137,7 +137,6 @@ header .intro-text .skills {
 }
 
 .navbar {
-    font-weight: 700;
 }
 
 .navbar a:focus {
@@ -567,14 +566,28 @@ li.gray_divider{
     height: 39px;
 }
 
+.philosophy_icon{
+    height: 118px;
+    position: absolute;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    transition: all .7s;
+}
+
+
 
 
 
 
 /*****************   Animations   **************/
 
-.graph_icon, .phone_icon, .strategy_div{
+.graph_icon, .phone_icon, .strategy_div, .bios_icon{
     position: relative;
+}
+
+
+.come_in-from-top{
+  top: -100px;
 }
 
 .come_in-from-left{
@@ -594,6 +607,13 @@ li.gray_divider{
   min-height: 370px;
 }
 
+
+.philosophy_icon:hover {
+    height: 145px;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    transition: all .7s;
+}
 
 /*****************   END Animations   **************/
 

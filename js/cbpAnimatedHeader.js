@@ -20,16 +20,17 @@ var cbpAnimatedHeader = (function() {
 		image_cluster = $('.image_cluster'),
 		our_services_slide_down = $('.our_services_slide_down'),
 		our_services_slide_up = $('.our_services_slide_up'),
-		philosophy_icon = $('.philosophy_icon'),
+		//philosophy_icon = $('.philosophy_icon'),
 		bios_icon = $('.bios_icon'),
 		didScroll = false,
 		changeHeaderOn = 80;
-		about_us_start = 236;
+		about_us_start = 436;
 		about_us_stop = 566;
 		image_cluster_start = 767;
 		our_services_start = 1365;
-		philosophy_start = 2150;
-		bios_start = 2700;
+		//philosophy_start = 2150;
+		bios_start = 2597;
+		bios_end = 3000;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -55,8 +56,8 @@ var cbpAnimatedHeader = (function() {
 		}
 
 		if(sy >= about_us_start){
-		  	graph_icon.removeClass('come_in-from-left');
-		  	phone_icon.removeClass('come_in-from-right');
+		  	graph_icon.removeClass('come_in-from-left').fadeIn("slow");
+		  	phone_icon.removeClass('come_in-from-right').fadeIn("slow");
 			pos = about_us_stop-sy;
 
 			if(pos < 0){
@@ -66,8 +67,8 @@ var cbpAnimatedHeader = (function() {
 			graph_icon.css('right', pos);
 			phone_icon.css('left', pos);
 		} else {
-		  	graph_icon.addClass('come_in-from-left');
-		  	phone_icon.addClass('come_in-from-right');
+		  	graph_icon.addClass('come_in-from-left').fadeOut("slow");
+		  	phone_icon.addClass('come_in-from-right').fadeOut("slow");
 		}
 
 		if(sy >= image_cluster_start){
@@ -84,16 +85,23 @@ var cbpAnimatedHeader = (function() {
 			our_services_slide_up.hide("slide", { direction: "down" }, 400);
 		}
 
-		if(sy >= philosophy_start){
-			philosophy_icon.show( "fold" );
-		} else {
-		    philosophy_icon.hide( "fold" );
-		}
+
 
 		if(sy >= bios_start){
-			bios_icon.show( "explode" );
+			console.log(sy);
+			bios_icon.removeClass('come_in-from-left').fadeIn("slow");
+
+			bios_pos = sy-bios_end+250;
+
+			if(bios_pos > 0){
+				bios_pos = 0;
+			}
+
+			console.log(bios_pos);
+
+			bios_icon.css('top', bios_pos);
 		} else {
-		    bios_icon.hide( "explode" );
+		    bios_icon.addClass('come_in-from-top').fadeOut("slow");
 		}
 
 
@@ -110,3 +118,7 @@ var cbpAnimatedHeader = (function() {
 	init();
 
 })();
+
+$(document).ready(function(){
+	
+});
