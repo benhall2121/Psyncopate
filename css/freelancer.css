@@ -626,9 +626,9 @@ li.gray_divider{
 
 .bios_icon{
     width:160px;
-    border-radius: 85px;
+    /*border-radius: 85px;
     -webkit-border-radius: 85px;
-    -moz-border-radius: 85px;
+    -moz-border-radius: 85px;*/
 }
 
 
