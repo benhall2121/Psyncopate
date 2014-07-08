@@ -18,7 +18,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #0591BD;
 }
 
 h1,
@@ -37,7 +37,7 @@ h6 {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #0591BD;
 }
 
 header .container {
@@ -75,29 +75,35 @@ header .intro-text .skills {
     }
 }
 
+.navbar-fixed-top.navbar-shrink {
+    padding: 0 0;
+}
+
+.navbar-fixed-top.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar-first{
+    z-index: 101;
+}
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 0;
         margin-top: 40px;
-        -webkit-transition: all .7s;
-        -moz-transition: all .7s;
-        transition: all .7s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
     }
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        -webkit-transition: all .7s;
-        -moz-transition: all .7s;
-        transition: all .7s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
     }
 
-    .navbar-fixed-top.navbar-shrink {
-        padding: 0 0;
-    }
 
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
 
     .navbar-first{
         position: fixed;
@@ -106,7 +112,6 @@ header .intro-text .skills {
         color:#0591BD;
         font-size: 14px;
         padding:10px;
-        z-index: 100;
     }
 
     .navbar-first a{
@@ -127,13 +132,13 @@ header .intro-text .skills {
 
     }
 
-    .fixed-position{
-        margin-top: 0px;
-        -webkit-transition: all .7s;
-        -moz-transition: all .7s;
-        transition: all .7s;
-    }
+}
 
+.fixed-position{
+    margin-top: 0px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 .navbar {
@@ -150,9 +155,9 @@ header .intro-text .skills {
 .navbar-nav li a.extra_padding{
     padding-top: 27.5px;
     padding-bottom: 27.5px;
-        -webkit-transition: all .7s;
-        -moz-transition: all .7s;
-        transition: all .7s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
 }
 
 .navbar .navbar-nav li a:focus {
@@ -179,7 +184,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #0591BD;
 }
 
 @media(max-width:767px) {
@@ -263,7 +268,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #0591BD;
     background: #fff;
 }
 
@@ -316,7 +321,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #0591BD;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -550,6 +555,10 @@ section.philosophy{
     padding: 5px 0 0 0;
 }
 
+.social_wrapper {
+  text-align:right;
+}
+
 .social_wrapper a{
     margin:0 5px;
 }
@@ -569,13 +578,51 @@ li.gray_divider{
 .philosophy_icon{
     height: 118px;
     position: absolute;
-    -webkit-transition: all .7s;
-    -moz-transition: all .7s;
-    transition: all .7s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 
+@media (max-width: 767px) {
+  
+  .sponsor_image{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
+  .image_cluster{
+    width: 80%;
+  }
+
+  .social_wrapper{
+    text-align: left;
+    padding: 15px;
+  }
+
+  .image_banner{
+    width:100%;
+  }
+
+  .philosophy_icon_wrapper{
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+
+  .philosophy_icon{
+    height:60px;
+    position: relative;
+  }
+
+  .navbar-nav li a.extra_padding{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.bios_container{
+    z-index: 100;
+}
 
 
 
@@ -610,9 +657,9 @@ li.gray_divider{
 
 .philosophy_icon:hover {
     height: 145px;
-    -webkit-transition: all .7s;
-    -moz-transition: all .7s;
-    transition: all .7s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 /*****************   END Animations   **************/
