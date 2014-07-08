@@ -624,6 +624,13 @@ li.gray_divider{
     z-index: 100;
 }
 
+.bios_icon{
+    width:160px;
+    border-radius: 85px;
+    -webkit-border-radius: 85px;
+    -moz-border-radius: 85px;
+}
+
 
 
 /*****************   Animations   **************/
@@ -665,4 +672,48 @@ li.gray_divider{
 /*****************   END Animations   **************/
 
 
+
+/*****************   Login   **************/
+.page_header_wrapper{
+  margin-top: 75px;
+}
+
+.page_header{
+    padding:40px 10px 10px 10px;
+    font-size: 30px;
+    border-bottom: 1px solid #737373;
+    color: #737373;
+    margin-bottom: 20px;
+}
+
+.form_row_wrapper{
+    margin-top:20px;
+}
+
+.field_label{
+    text-align: right;
+    color: #737373;
+}
+
+.field_wrapper input{
+    width:100%;
+    border: 1px solid #737373;
+}
+
+/*****************   END Login   **************/
+
+
+
+/*****************   Sign Up   **************/
+
+.form_header_text{
+    color:#737373;
+}
+
+.form_footer_text{
+    color: #737373;
+    font-size: 10px;
+}
+
+/*****************   END Sign Up   **************/
 
