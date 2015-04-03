@@ -706,6 +706,17 @@ li.gray_divider{
 
 /*****************   Sign Up   **************/
 
+.thank_you_wrapper{
+    padding:5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #737373;
+    background-color: #EDEDED;
+    margin-top:10px;
+    margin-bottom:10px;
+    display: none;
+}
+
 .form_header_text{
     color:#737373;
 }

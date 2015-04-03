@@ -108,10 +108,14 @@
                 Contact Sales
             </div>
 
-            <div class="col-lg-12 form_row_wrapper form_header_text">
+            <div class="thank_you_wrapper col-lg-10 col-lg-offset-1">
+                Thank you for contacting Psyncopate.  A service director will be contacting you soon.  Please feel free to also call us at (855) 722-1102
+            </div>
+
+            <div class="col-lg-10 col-lg-offset-1 form_row_wrapper form_header_text">
                 <span style="font-weight:bold; color:#598C2C;">Thank you for your interest.</span>
                 <br/>
-                Have a question? Need help with your download? Want to learn more? Fill out the form below and someone will contact you shortly. <span style="font-decoration:italic;">All Fields Required</span>
+                Have a question? Want to learn more? Fill out the form below and someone will contact you shortly. <span style="font-decoration:italic;">All Fields Required</span>
             </div>
 
             <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://psyncopate.wufoo.com/forms/zfv4i6s1bv4p4i/#public">
@@ -358,7 +362,7 @@
                 <div class="col-lg-3 field_label">
                 </div>
                 <div class="col-lg-6 field_wrapper">
-                    Please note that by submitting your personal data in this registration form, you consent to receiving email communication. You may opt-out of receiving further communications at any time. For further information please see our <a href="#">Privacy Policy</a>
+                    Please note that by submitting your personal data in this registration form, you consent to receiving email communication. You may opt-out of receiving further communications at any time by contacting us.
                 </div>
             </div>
 
@@ -420,7 +424,26 @@ $(document).ready(function(){
           alert('Unrecognized user.  Please check your spelling and try again or contact us at "info@psyncopate.com" or (855) 722-1102');
       }, 500);
   });
-})
+
+  if(getUrlParameter("thank") == "you"){
+    $('.thank_you_wrapper').show();
+  }
+
+});
+
+function getUrlParameter(sParam){
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
 
 </SCRIPT>
 
