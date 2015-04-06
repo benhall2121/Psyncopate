@@ -1,0 +1,1 @@
+Psyncopate was suppose to be a one page staic website for a client. It ended up being three pages. The website is meant to be informational and fancy. So we added a bunch of fancy animations for when you scroll through the page.
