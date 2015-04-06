@@ -17,6 +17,7 @@
     <link href='css/museo_slab.css' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/half-slider.css" rel="stylesheet" type="text/css">    
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
     <!-- IE8 support for HTML5 elements and media queries -->
@@ -79,6 +80,9 @@
                         <a href="#philosophy" class="extra_padding">Philosophy</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#partner" class="extra_padding">Partners</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#bio" class="extra_padding">Bios</a>
                     </li>
                 </ul>
@@ -86,7 +90,7 @@
             <!-- /.navbar-collapse -->
 
 
-            <div class="navbar-header page-scroll col-lg-3 hidden-xs">
+            <div class="navbar-header page-scroll col-lg-2 hidden-xs">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
                         <a href="mailto:info@psyncopate.com" class="no_highlight"><img src="img/emailIcon.png" /></a>
@@ -103,37 +107,111 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="main_section" id="main_section">
-        <div class="container main_section_wrapper">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="main_section_large_text">
-                        Get big beautiful data in 30 days
+
+
+
+
+
+
+    <!-- Half Page Image Background Carousel Header -->
+    <section id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="main_section_slide main_section_slide_1" id="main_section">
+                    <div class="container">
+                    <div class="row main_section_row_text">
+                        <div class="col-lg-4 ">
+                            <div class="main_section_large_text">
+                                Get big beautiful data in 30 days
+                            </div>
+                            <div class="main_section_medium_text" style="margin:35px 0;">
+                                Need better data insight in the next 30 days? Start today and get to the point
+                            </div>
+                            <div>
+                                <a href="mailto:info@psyncopate.com"><img src="img/psyncopateButton.png" /></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="main_section_medium_text" style="margin:35px 0;">
-                        Need better data insight in the next 30 days? Start today and get to the point
                     </div>
-                    <div>
-                        <a href="mailto:info@psyncopate.com"><img src="img/psyncopateButton.png" /></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main_section_slide main_section_slide_2" id="main_section_2">
+                    <div class="container">
+                    <div class="row main_section_row_text">
+                        <div class="col-lg-4 ">
+                            <div class="main_section_large_text">
+                                See what is not visible
+                            </div>
+                            <div class="main_section_medium_text" style="margin:35px 0;">
+                                Need to know what / when / who / where / why? Start today and get to the point
+                            </div>
+                            <div>
+                                <a href="mailto:info@psyncopate.com"><img src="img/psyncopateButton.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main_section_slide main_section_slide_3" id="main_section_3">
+                    <div class="container">
+                    <div class="row main_section_row_text">
+                        <div class="col-lg-4 ">
+                            <div class="main_section_large_text">
+                                Ask and you shall receive
+                            </div>
+                            <div class="main_section_medium_text" style="margin:35px 0;">
+                                Need an independent expert perspective & sounding board? Start today and get to the point
+                            </div>
+                            <div>
+                                <a href="mailto:info@psyncopate.com"><img src="img/psyncopateButton.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main_section_slide main_section_slide_4" id="main_section_4">
+                    <div class="container">
+                    <div class="row main_section_row_text">
+                        <div class="col-lg-4 ">
+                            <div class="main_section_large_text">
+                                Move up in the world
+                            </div>
+                            <div class="main_section_medium_text" style="margin:35px 0;">
+                                Need a ticket to The Cloud. We have your itinerary reserved. Start today and get to the point
+                            </div>
+                            <div>
+                                <a href="mailto:info@psyncopate.com"><img src="img/psyncopateButton.png" /></a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="banner" id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <a href="http://www.tibco.com/?pcode=Psyncopate" src=""><img src="img/tibcoLogo.png" class="sponsor_image" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="http://spotfire.tibco.com/?pcode=Psyncopate" src=""><img src="img/SpotfirePartner_Logo_stacked_April_2014.png" style="height:49px;" class="sponsor_image" /></a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
 
+    </section>
     
 
     <section id="about" class="about">
@@ -188,7 +266,7 @@
             <div class="row p_row">
                 <div class="col-lg-6 p_text">
                     <p>
-                    <span class="header_p_text">Psyncopate</span> is the premier strategy and professional services firm for cloud, big data and applicaPons integraPon on the West Coast. We are our customers’ strategists, sounding board, root case invesPgators, and full service systems integrators. We are beholden to our customers’ success, not to any one technology.
+                    <span class="header_p_text">Psyncopate</span> is the premier strategy and professional services firm for cloud, big data and applications integration on the West Coast. We are our customers’ strategists, sounding board, root case investigators, and full service systems integrators. We are beholden to our customers’ success, not to any one technology.
                     </p>
                     <p style="margin-top:25px;">
                     <span class="header_p_text">Psyncopate</span> is reshaping the technology consulting services industry with our “ALIIGN Customer Engagement Model”, which proactively seeks to identify, target and eliminate the waste (costs) that normally plagues most technology projects.  With the right strategy, tools and partner and the absence of waste, projects are delivered faster, consulting fees are smaller and value creation happens sooner. We seek to maximize our customers' lifetime value through 100% client satisfaction and referral/repeat business.
@@ -393,6 +471,43 @@
                         We get to the point. Our objective is to make things easy for our customers. We simply get to the point in all things that we do and maximize the lifetime value of our customers.
                     </div>
                   </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="partner" id="partner">
+        <div class="container">
+            <div class="row banner_row">
+                <div class="col-lg-12 text-center partners_container">
+                    <img src="img/biosBanner.png" style="z-index:300;" class="image_banner" />
+                </div>
+            </div>
+
+
+            <div class="row p_row top-padding">
+                <div class="p_text">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <span class="header_p_text">Psyncopate</span> takes a technology agnostic business centric approach to defining solutions for our customers. Our best-in-class technology partners often deliver the necessary platforms to enable these solutions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row top-padding partner_logo_wrapper" style="text-align:center;">
+                <div class="partner_logo_image_wrapper">
+                    <a href="http://www.gigya.com/" src=""><img src="img/gigyaLogoCropped.jpg" class="sponsor_image" /></a>
+                </div>
+                <div class="partner_logo_image_wrapper">
+                    <a href="http://www.oracle.com/index.html" src=""><img src="img/oracleGoldPartnerLogoCropped.png" class="sponsor_image" /></a>
+                </div>
+                <div class="partner_logo_image_wrapper">
+                    <a href="http://www.tibco.com/?pcode=Psyncopate" src=""><img src="img/tibcoLogo.png" class="sponsor_image" /></a>
+                </div>
+                <div class="partner_logo_image_wrapper">
+                    <a href="http://spotfire.tibco.com/?pcode=Psyncopate" src=""><img src="img/SpotfirePartner_Logo_stacked_April_2014.png" class="sponsor_image" /></a>
                 </div>
             </div>
 
