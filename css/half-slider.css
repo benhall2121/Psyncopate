@@ -21,4 +21,8 @@
     width: 5%;
 }
 
+.carousel-indicators {
+    bottom: 100px;
+  }
+
 /* Background images are set within the HTML using inline CSS, not here */

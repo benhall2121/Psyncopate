@@ -453,10 +453,28 @@ footer .footer-below {
   min-height: 676px;
 }
 
-.main_section_slide_1{
-  background-image:url('../img/mainImageCropped.png');  
+.main_section_slide_1, .main_section_slide_2, .main_section_slide_3, .main_section_slide_4{
   background-repeat:no-repeat;
   background-position:right bottom; 
+}
+
+.main_section_slide_1{
+  background-image:url('../img/sliderGirlCropped.png');  
+}
+
+.main_section_slide_2{
+  background-image:url('../img/sliderInvisibleCropped.jpg');  
+  background-size: cover;
+}
+
+.main_section_slide_3{
+  background-image:url('../img/sliderAskCropped.jpg'); 
+  background-size: cover; 
+}
+
+.main_section_slide_4{
+  background-image:url('../img/sliderCloudCropped.jpg'); 
+  background-size: cover;
 }
 
 
@@ -465,18 +483,32 @@ footer .footer-below {
 }
 
 
-.main_section_large_text{
+.main_section_large_white_text, .main_section_large_black_text{
     font-size: 40px;
     font-family: 'museo_slab500', serif;
-    color: #fff;
-    line-height: 50px;
+    line-height: 50px;  
 }
 
-.main_section_medium_text{
+.main_section_medium_white_text, .main_section_medium_black_text{
     font-size: 19px;
-    color: white;
-    text-shadow: 0px 1px #000;
     line-height: 27px;
+}
+
+.main_section_large_white_text{
+    color: #fff;
+}
+
+.main_section_medium_white_text{
+    text-shadow: 0px 1px #000;
+    color: #fff;
+}
+
+.main_section_large_black_text{
+    color: #282828;
+}
+
+.main_section_medium_black_text{
+    color: #282828;
 }
 
 section.banner{
