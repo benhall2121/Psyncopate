@@ -478,8 +478,8 @@ footer .footer-below {
 }
 
 .main_section_slide_alignment{
-  background-image:url('../img/sliderAlignment.jpg'); 
-  background-size: cover;
+  background:url('../img/sliderAlignment.jpg') no-repeat top right, url('../img/sliderAlignmentLeft.jpg') repeat-x; 
+    background-size: auto 100%;
 }
 
 .main_section_row_text{
