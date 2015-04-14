@@ -453,30 +453,34 @@ footer .footer-below {
   min-height: 676px;
 }
 
-.main_section_slide_1, .main_section_slide_2, .main_section_slide_3, .main_section_slide_4{
+.main_section_slide_data, .main_section_slide_invisible, .main_section_slide_ask, .main_section_slide_cloud, .main_section_slide_alignment{
   background-repeat:no-repeat;
   background-position:right bottom; 
 }
 
-.main_section_slide_1{
+.main_section_slide_data{
   background-image:url('../img/sliderGirlCropped.png');  
 }
 
-.main_section_slide_2{
+.main_section_slide_invisible{
   background-image:url('../img/sliderInvisibleCropped.jpg');  
   background-size: cover;
 }
 
-.main_section_slide_3{
+.main_section_slide_ask{
   background-image:url('../img/sliderAskCropped.jpg'); 
   background-size: cover; 
 }
 
-.main_section_slide_4{
+.main_section_slide_cloud{
   background-image:url('../img/sliderCloudCropped.jpg'); 
   background-size: cover;
 }
 
+.main_section_slide_alignment{
+  background-image:url('../img/sliderAlignment.jpg'); 
+  background-size: cover;
+}
 
 .main_section_row_text{
     margin-top: 150px;
