@@ -642,13 +642,13 @@ li.gray_divider{
 
 @media (max-width: 767px) {
   
-  section.carousel{
-
+  .hidden-sm{
+    display: none;
   }
 
   .main_section_slide{
-    min-height: 385px;
-    margin-top: 10px;
+    min-height: 365px;
+    margin-top: 20px;
 
     background-color: #CDCDCD;
     background-position:left top; 
@@ -664,10 +664,11 @@ li.gray_divider{
   }
 
   .main_section_header_text{
-    font-size: 20px;
+    font-size: 18px;
     line-height: normal;
     color: #282828;
     text-shadow:none;
+    text-align: center;
   }
 
   .main_section_text{
@@ -680,6 +681,10 @@ li.gray_divider{
 
   .lets_psyncopate_button_wrapper{
     text-align: center;
+  }
+
+  .lets_psyncopate_button_image{
+    height:38px;
   }
 
   .carousel-indicators{
