@@ -479,13 +479,16 @@ footer .footer-below {
 
 .main_section_slide_alignment{
   background:url('../img/sliderAlignment.jpg') no-repeat top right, url('../img/sliderAlignmentLeft.jpg') repeat-x; 
-    background-size: auto 100%;
+  background-size: auto 100%;
 }
 
 .main_section_row_text{
     margin-top: 150px;
 }
 
+.main_section_text{
+    margin:35px 0;
+}
 
 .main_section_large_white_text, .main_section_large_black_text{
     font-size: 40px;
@@ -636,7 +639,51 @@ li.gray_divider{
 @media (max-width: 767px) {
   
   .main_section_slide{
-    min-height: 638px;
+    min-height: 385px;
+    margin-top: 10px;
+
+    background-color: #CDCDCD;
+    background-position:left top; 
+    background-size: 100% auto;
+  }
+
+  .main_section_slide_alignment{
+    background-image:url('../img/sliderAlignment.jpg');  
+  }
+
+  .main_section_row_text{
+    margin-top: 210px;
+  }
+
+  .main_section_header_text{
+    font-size: 20px;
+    line-height: normal;
+    color: #282828;
+    text-shadow:none;
+  }
+
+  .main_section_text{
+    font-size: 11px;
+    line-height: normal;
+    margin: 10px 0;
+    color: #282828;
+    text-shadow:none;
+  }
+
+  .lets_psyncopate_button_wrapper{
+    text-align: center;
+  }
+
+  .carousel-indicators{
+    bottom: 70px;
+  }
+
+  .carousel-control .icon-prev, .carousel-control .icon-next{
+    margin-top: -20px;
+  }
+
+  .carousel-control .icon-next{
+    right:0px;
   }
 
   .partner{
