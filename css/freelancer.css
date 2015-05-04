@@ -639,7 +639,6 @@ li.gray_divider{
     height: 49px;
 }
 
-
 @media (max-width: 767px) {
   
   .hidden-sm{
@@ -743,6 +742,38 @@ li.gray_divider{
     padding-bottom: 10px;
   }
 }
+
+
+@media only screen and (max-device-width: 480px) {
+  .main_section_slide{
+    min-height: 325px;
+    margin-top: 30px;
+  }
+
+  .main_section_row_text{
+    margin-top: 170px;
+  }
+
+  .main_section_header_text{
+    font-size: 15px;
+  }
+
+  .main_section_text{
+    font-size: 11px;
+    margin: 10px 0;
+  }
+
+  .lets_psyncopate_button_image{
+    height:38px;
+  }
+
+  .carousel-indicators{
+    bottom: 70px;
+  }
+}
+
+
+
 
 .bios_container{
     z-index: 100;
