@@ -744,7 +744,7 @@ li.gray_divider{
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 368px) {
   .main_section_slide{
     min-height: 325px;
     margin-top: 30px;
