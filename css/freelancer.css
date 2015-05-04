@@ -195,6 +195,10 @@ section.success {
     section.first {
         padding-top: 75px;
     }
+
+    section.about{
+        padding-top: 0px;
+    }
 }
 
 #services .services-item {
@@ -638,6 +642,10 @@ li.gray_divider{
 
 @media (max-width: 767px) {
   
+  section.carousel{
+
+  }
+
   .main_section_slide{
     min-height: 385px;
     margin-top: 10px;
